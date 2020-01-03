@@ -1,6 +1,6 @@
 
 def test_function(x):
-    
+ 
     if type(x) == str:
         return 'Строка'
     elif type(x) in [int, float, complex, bytes]:  #почему не могу тип long?
