@@ -1,6 +1,5 @@
 
-def test_function(x):
- 
+def function(x):
     if type(x) == str:
         return 'Строка'
     elif type(x) in [int, float, complex, bytes]:  #почему не могу тип long?
@@ -15,6 +14,9 @@ def test_function(x):
     # да, по сути такая обработака и имелась в виду 
     else:
         return 'undefined'
+
+
 # вызов здесь не надо делать
-x = test_function(True)
-print(x)
+if __name__ == '__main__':
+    x = function(True)
+    print(x)
